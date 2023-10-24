@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========== NAVBAR STYLING ============*/
+
+.Navbar {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    background-color: #333;
+    padding: 20px;
+}
+
+.Logo {
+    margin-left: 16px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin: 0 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a.active {
+    color: #00B207;
+}
+
+
+/* =========== CATALOG STYLING ============*/
+
+.Content {
+    margin-left: 40px;
+}
+
+.Content h4 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.ProductCategory {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.Product {
+    width: 200px;
+    height: 100%;
+    background: white;
+    border-radius: 5px;
+    border: 1px #E6E6E6 solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.Image1 {
+    width: 100px;
+    height: 80px;
+}
+
+.Productdetail {
+    font-size: 10px;
+    font-style: italic;
+}
+
+.Productdetail .Name {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.Productdetail .Price {
+    font-size: 10px;
+    font-weight: 600;
+    color: #1bcd00;
+    font-style: italic;
+}
+
+.Product a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
