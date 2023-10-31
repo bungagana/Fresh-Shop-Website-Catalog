@@ -1,9 +1,5 @@
 //=========== Read Username data from local ==========================
 const userData = JSON.parse(localStorage.getItem('registrationData'));
-// Misalkan halaman default adalah register.html
-window.location.href = 'resgiter.html';
-
-
 if (userData && userData.name) {
     // show username 
     const userNameElement = document.getElementById('userName');
