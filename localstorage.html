@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lihat Data Pendaftaran</title>
+</head>
+
+<body>
+    <h2>Data Pendaftaran</h2>
+    <div id="registrationData"></div>
+
+    <script>
+        // Membaca data dari localStorage
+        const storedData = localStorage.getItem('registrationData');
+
+        // Mengubah data JSON menjadi objek JavaScript
+        const registrationData = JSON.parse(storedData);
+
+        // Menampilkan data
+        if (registrationData) {
+            const registrationDataElement = document.getElementById('registrationData');
+            registrationDataElement.innerHTML = 'Data Pendaftaran:<br>';
+            registrationDataElement.innerHTML += 'Nama: ' + registrationData.name + '<br>';
+            registrationDataElement.innerHTML += 'Email: ' + registrationData.email + '<br>';
+            registrationDataElement.innerHTML += 'Username: ' + registrationData.username + '<br>';
+            registrationDataElement.innerHTML += 'Password: ' + registrationData.password + '<br>';
+            registrationDataElement.innerHTML += 'Address: ' + registrationData.address;
+        } else {
+            console.log('Tidak ada data pendaftaran.');
+        }
+    </script>
+</body>
+
+</html>

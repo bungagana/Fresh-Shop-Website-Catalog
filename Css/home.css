@@ -4,17 +4,20 @@ html,
 body {
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 
 /* =========== NAVBAR STYLING ============*/
 
 
-/* ----------- Divide navbar jadi 2 2 frame and give bg, padding ------------------*/
+/* ----------- Divide navbar space between ------------------*/
 
 .Navbar {
-    display: grid;
-    grid-template-columns: auto 1fr;
+    /* display: grid;
+    grid-template-columns: auto 1fr; */
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     background-color: #333;
     padding: 20px;
@@ -24,7 +27,7 @@ body {
 /* --------- Geser logo ke kiri ----------*/
 
 .Logo {
-    margin-left: 16px;
+    margin-left: 40px;
 }
 
 
@@ -56,6 +59,21 @@ a {
 
 a.active {
     color: #00B207;
+}
+
+.ProfileInfo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 40px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.ProfileIcon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
 }
 
 
@@ -194,7 +212,6 @@ a.active {
     word-wrap: break-word;
     margin: 40px;
     text-align: center;
-    /* Menambahkan jarak 40px ke bawah dari "Popular Categories" */
 }
 
 .Image1 {

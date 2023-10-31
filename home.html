@@ -16,12 +16,14 @@
         <div class="Logo">
             <img src="Images/Logo.png" alt="Logo" width="120">
         </div>
-
-
         <ul>
             <li><a href="home.html" class="active">Home</a></li>
-            <li><a href="produkcategory.html">Catalog</a></li>
+            <li><a href="products.html">Catalog</a></li>
         </ul>
+        <div class="ProfileInfo">
+            <img src="Images/profile-icon.png" alt="Profile Icon" class="ProfileIcon">
+            <span id="userName">Username</span>
+        </div>
     </div>
     <!-------------------- END NAVBAR SECTION -------------------->
 
@@ -125,7 +127,7 @@
             </a>
         </div>
     </div>
-    <!-------------------- START POP CATEGORIES SECTION -------------------->
+    <!-------------------- END POP CATEGORIES SECTION -------------------->
 
     <!-------------------- START ARTICLE SECTION -------------------->
     <div class="Article">
@@ -143,7 +145,6 @@
         </div>
     </div>
     <!-------------------- END ARTICLE SECTION -------------------->
-
 
     <!-------------------- START TESTI SECTION -------------------->
     <div class="TestimonialTitle">
@@ -227,8 +228,17 @@
     </div>
     <!-------------------- END FOOTER SECTION -------------------->
 
+    <!-------------------- JS SECTION -------------------->
+    <script>
+        // Read username from local storage
+        const userData = JSON.parse(localStorage.getItem('registrationData'));
 
-
+        if (userData && userData.name) {
+            // showing username from local to home navbar
+            const userNameElement = document.getElementById('userName');
+            userNameElement.textContent = userData.username;
+        }
+    </script>
 
 </body>
 

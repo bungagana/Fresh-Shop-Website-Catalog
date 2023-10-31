@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="Css/products.css">
+    <link rel="stylesheet" href="Css/cart.css">
+</head>
+
+<body>
+    <!---------------------- START NAVBAR SECTION -------------------------->
+    <div class="Navbar">
+        <div class="Logo">
+            <img src="Images/Logo.png" alt="Logo" width="120">
+        </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="produkcategory.html" class="active">Catalog</a></li>
+        </ul>
+        <div class="ProfileInfo">
+            <img src="Images/profile-icon.png" alt="Profile Icon" class="ProfileIcon">
+            <span id="userName">Username</span>
+        </div>
+    </div>
+    <!---------------------- END NAVBAR SECTION -------------------------->
+
+    <!---------------------- START PRODUCT CATEGORIES SECTION -------------------------->
+    <div class="Content">
+        <h4 class="SubFilter">Product Categories</h4>
+        <div class="CategoryFilter">
+            <select id="categorySelect">
+                <option value="Fruits">Fresh Fruits</option>
+                <option value="Vegetables">Fresh Vegetables</option>
+                <option value="Meat-Fish">Meat/Fish</option>
+                <option value="Snacks">Snacks</option>
+                <option value="Beverages">Beverages</option>
+            </select>
+        </div>
+        <h4 class="SubProduct">Product Categories</h4>
+        <div class="ProductCategory" id="Products">
+            <!-- automatically display, generate product cart from js -->
+        </div>
+        <hr>
+
+        <h4 class="SubHeadCart">Shopping Cart</h4>
+        <div class="ShoppingCart">
+            <ul id="cartItems">
+                <!-- Selected items will be displayed here -->
+            </ul>
+            <div class="TotalPrice">
+                Total: <span id="totalPrice">0</span>
+            </div>
+            <button id="buyButton">Buy</button>
+        </div>
+    </div>
+
+    <!---------------------- START JS SECTION -------------------------->
+    <script src="script.js"></script>
+    <!---------------------- END NAVBAR SECTION -------------------------->
+</body>
+
+</html>
